@@ -43,3 +43,13 @@ The final output enables real estate stakeholders to analyze property trends, pr
 - Scalable transformations
 
 - Reliable analytics output
+  
+**3️⃣Tech Stack Explanation Table**
+|Tool|Purpose|Role in Architect|Why It Was Used|
+|----|-------|------------------|--------------|
+|AWS S3|Raw data storage (Data Lake)|Bronze Layer|Stores immutable raw CSV files, scalable and cost-effective storage, separates storage from compute|
+|Databricks|Data transformation & processing|Transformation Engine|Runs distributed data processing jobs, manages Bronze → Silver → Gold pipeline|
+|PySpark|Data cleaning & modeling|Silver Layer Cleaning & Gold Aggregation|Cleans messy data, handles large datasets efficiently, pejoins,aggregations, and feature engineering|
+|Delta Lake|reliable data storage|Silver & Gold Storage|Provides ACID transactions, prevents corrupted writes, supports schema evolution, enabltime travel|
+|SQL|Data querying and aggregation|Gold Layer Analytics|Creates business-ready tables, performs aggregations, enables structured querying for analytics|
+|Power BI|Data visualization & reporting|Business Consumption Layer|Builds dashboards, visualizes insights, supports decision-making|
