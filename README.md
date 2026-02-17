@@ -33,4 +33,13 @@ This project builds an end-to-end data engineering pipeline that:
 The final output enables real estate stakeholders to analyze property trends, pricing distribution, and regional performance.
 
 **2️⃣ Architecture Diagram**
+![image alt](https://github.com/KatlegoPhoka2/Airbnb-listings/blob/57a241f0f9398515f388354a40a56781ad3ab5aa/architecture%20diagram.png)
+**Architecture Benefits**
 
+- Clear data separation
+
+- Improved data quality
+
+- Scalable transformations
+
+- Reliable analytics output
