@@ -58,3 +58,111 @@ The final output enables real estate stakeholders to analyze property trends, pr
 |Delta Lake|reliable data storage|Silver & Gold Storage|Provides ACID transactions, prevents corrupted writes, supports schema evolution, enabltime travel|
 |SQL|Data querying and aggregation|Gold Layer Analytics|Creates business-ready tables, performs aggregations, enables structured querying for analytics|
 |Power BI|Data visualization & reporting|Business Consumption Layer|Builds dashboards, visualizes insights, supports decision-making|
+
+**4️⃣ Medallion Architecture Implementation**
+
+**🥉 Bronze Layer – Raw Data**
+
+- Loaded listings.csv from S3
+
+- Stored as Delta table
+
+- Added: source_file
+
+Purpose:
+
+- Preserve original dataset
+
+-  Enable data reprocessing
+
+ - Maintain traceability
+
+**🥈 Silver Layer – Cleaned Data**
+
+Performed data cleaning and transformations:
+
+- Removed duplicate listings
+
+- Handled missing prices and null fields
+
+- Standardized column names (lowercase, underscores)
+
+- Converted price to numeric
+
+- Cleaned location formatting
+
+- Filtered unrealistic property values
+
+Purpose:
+
+- Ensure reliable and structured data
+
+- Improve data consistency
+
+- Prepare for business modeling
+
+**🥇 Gold Layer – Business Analytics Model**
+
+Created aggregated tables for reporting:
+
+**Example Gold Tables**
+
+- gold_avg_price_by_city
+
+- gold_property_type_distribution
+
+- gold_price_trends
+
+- gold_bedroom_analysis
+
+**KPIs Generated**
+
+- Average Property Price
+
+- Total Listings
+
+- Price by Location
+
+- Price per Bedroom
+
+- Most Common Property Type
+
+Purpose:
+
+- Enable decision-making
+
+- Support property market analysis
+
+- Provide investor insights
+
+**5️⃣ Power BI Dashboard**
+
+Dashboard built using Gold tables from Databricks.
+
+**Dashboard Includes:**
+
+- 📊 Average price by city
+
+  - 📈 Price distribution trend
+
+- 🏘 Property type breakdown
+
+- 🛏 Bedrooms vs Price analysis
+
+- 📍 Geographic property distribution
+
+![Power BI image]
+
+**6️⃣ Business Value**
+
+This solution allows:
+
+- Real estate agencies to analyze pricing trends
+
+- Investors to identify high-value markets
+
+- Management to track listing performance
+
+- Data-driven property pricing strategies
+
+- The architecture follows cloud data engineering best practices.
