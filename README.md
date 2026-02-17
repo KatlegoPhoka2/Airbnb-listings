@@ -4,6 +4,11 @@
 
 1️⃣ **Project Overview** 
 
+**📌 Objective**
+
+Designed and implemented a Medallion Architecture pipeline (Bronze → Silver → Gold) to clean and transform raw Airbnb listing data into analytics-ready datasets for business intelligence reporting.
+
+
 📌 **Business Problem**
 
 Real estate companies collect property listing data including:
