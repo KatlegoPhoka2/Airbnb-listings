@@ -151,7 +151,7 @@ Dashboard built using Gold tables from Databricks.
 
 - 📍 Geographic property distribution
 
-![Power BI image]
+![Power BI image](https://github.com/KatlegoPhoka2/Airbnb-listings/blob/7f9eddd50e06bcfa1620a19db6713f57ab8d56ff/Airbnb_powerBI.png)
 
 **6️⃣ Business Value**
 
